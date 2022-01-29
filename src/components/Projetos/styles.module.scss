@@ -1,0 +1,48 @@
+.Projetos {
+  height: 100vh;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.projects__title {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 45px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.box__projects {
+  width: 100%;
+  background-color: var(--gray-300);
+}
+
+.box__projects img {
+  width: 100%;
+  padding: 20px 25px 20px 25px;
+}
+
+.box__title {
+  color: #fff;
+  font-size: 1.12rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  margin-left: 25px;
+}
+
+.box__description {
+  color: var(--gray-900);
+  font-size: 0.87rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
