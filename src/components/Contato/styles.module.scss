@@ -1,0 +1,150 @@
+.contentContent {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1120px;
+  height: 100vh;
+}
+.borderContent {
+  margin: 0 auto;
+  height: 90vh;
+  position: relative;
+  background: var(--gray-100);
+  border-radius: 2rem;
+}
+.borderContent:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: rgb(12, 12, 12);
+  z-index: -1;
+  border-radius: 2rem;
+}
+.borderContent:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: rgb(12, 12, 12);
+  z-index: -2;
+  filter: blur(40px);
+  border-radius: 2rem;
+}
+.borderContent:before,
+.borderContent:after {
+  background: linear-gradient(
+    235deg,
+    var(--yellow-500),
+    var(--gray-100),
+    #00bcd4
+  );
+}
+
+.titulo {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+.sectionContato {
+  margin: 1rem;
+
+  h4 {
+    font-weight: 900;
+    display: flex;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  p {
+    display: flex;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+}
+.MidiaSocial {
+  padding: 2rem;
+
+  img {
+    height: 2rem;
+    margin-top: 2rem;
+    margin-right: 0.9rem;
+  }
+  img:hover {
+    padding: 0.1rem;
+    background: var(--yellow-500);
+    border-radius: 100%;
+    filter: brightness(0.9);
+  }
+}
+
+@media (max-width: 1280px) {
+  .contentContent {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+  .borderContent {
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .contentContent {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+  .borderContent {
+    height: auto;
+    width: 970px;
+  }
+}
+@media (max-width: 920px) {
+  .contentContent {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+  .borderContent {
+    height: auto;
+    width: 940px;
+  }
+}
+@media (max-width: 820px) {
+  .contentContent {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+  .borderContent {
+    height: auto;
+    width: 750px;
+  }
+}
+@media (max-width: 550px) {
+  .contentContent {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+  .borderContent {
+    height: auto;
+    width: 740px;
+  }
+}
+@media (max-width: 390px) {
+  .contentContent {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+  .borderContent {
+    height: auto;
+    width: 700px;
+  }
+}

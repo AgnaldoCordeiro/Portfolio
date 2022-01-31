@@ -16,3 +16,40 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 1280px) {
+  .container__sectionSobre {
+    height: auto;
+    width: 1280px;
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container__sectionSobre {
+    height: auto;
+    width: 1000px;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 820px) {
+  .container__sectionSobre {
+    height: auto;
+    width: 800px;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 550px) {
+  .container__sectionSobre {
+    height: auto;
+    width: 800px;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 390px) {
+  .container__sectionSobre {
+    height: auto;
+    width: 800px;
+    margin-bottom: 10rem;
+  }
+}

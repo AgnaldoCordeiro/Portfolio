@@ -6,15 +6,15 @@ export function Servicos() {
       <h2 className={styles.services__title}>Serviços</h2>
       <div className={styles.cards}>
         <div className={styles.card__services}>
-          <img src="./src/img/code.svg" alt="" />
+          <img src="./code.png" alt="" />
           <h3 className={styles.card__title}>Criação de sites</h3>
         </div>
         <div className={styles.card__services}>
-          <img src="./src/img/figma.svg" alt="" />
+          <img src="./figma.png" alt="" />
           <h3 className={styles.card__title}>Ui Designer</h3>
         </div>
         <div className={styles.card__services}>
-          <img src="./src/img/smartphone.svg" alt="" />
+          <img src="./smartphone.png" alt="" />
           <h3 className={styles.card__title}>Sites responsivos</h3>
         </div>
       </div>

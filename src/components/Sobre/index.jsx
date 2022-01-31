@@ -2,7 +2,7 @@ import styles from "./styles.module.scss";
 
 export function Sobre() {
   return (
-    <section className={styles.container__sectionSobre}>
+    <section className={styles.container__sectionSobre} id="sobre">
       <div>
         <h2>Sobre Mim</h2>
         <p>Sou entusiasta das melhores tecnologias de desenvolvimento web.</p>

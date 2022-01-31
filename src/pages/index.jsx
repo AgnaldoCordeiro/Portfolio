@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { Contato } from "../components/Contato";
+import { Formulario } from "../components/Formulario";
 import { Projetos } from "../components/Projetos";
 import { Servicos } from "../components/Servicos";
 import { Sobre } from "../components/Sobre";
@@ -16,7 +18,12 @@ export default function Home() {
             Olá sou <br />
             <span>AgnaldoCordeiro</span>
           </h1>
-          <p>Dev Front End</p>
+          <p>Desenvolvedor Front End</p>
+          <button className={styles.btnDownload}>
+            <a href="/src/Doc/CV_Agnaldo.pdf" download>
+              Download Currículo
+            </a>
+          </button>
         </section>
         <img src="/perfil-site.jpg" alt="imagem perfil" />
       </main>
@@ -24,6 +31,9 @@ export default function Home() {
       <Sobre />
       <Projetos />
       <Servicos />
+      <Contato id="contact">
+        <Formulario />
+      </Contato>
     </>
   );
 }
