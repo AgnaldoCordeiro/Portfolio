@@ -18,7 +18,7 @@ export function Sobre() {
         </p>
         <p>
           Apaixonado por Tecnologia, busco estar sempre por dentro das inovações
-          que revoluciona o mundo.
+          que revolucionam o mundo.
         </p>
 
         <h3>Tecnologias</h3>
