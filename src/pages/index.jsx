@@ -16,7 +16,7 @@ export default function Home() {
         <section className={styles.hero}>
           <h1>
             Olá sou <br />
-            <span>AgnaldoCordeiro</span>
+            <span>Agnaldo Cordeiro</span>
           </h1>
           <p>Desenvolvedor Front End</p>
           <button className={styles.btnDownload}>

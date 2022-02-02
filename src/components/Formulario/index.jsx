@@ -1,8 +1,11 @@
 import emailjs from "emailjs-com";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 
 export function Formulario() {
+  const [error, setError] = useState(""),
+    [success, setSuccess] = useState("");
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -16,10 +19,11 @@ export function Formulario() {
 
       .then(
         (result) => {
-          alert("Mensagem enviada com sucesso! 👍");
+          setSuccess("Mensagem enviada com sucesso!");
+          // alert("Mensagem enviada com sucesso! 👍");
         },
         (error) => {
-          alert(error.message);
+          setError(error.message);
         }
       );
     e.target.reset();
@@ -53,6 +57,9 @@ export function Formulario() {
             >
               Enviar
             </button>
+            <p>
+              {success} {error}
+            </p>
           </div>
         </form>
       </main>
