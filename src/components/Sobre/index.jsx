@@ -11,7 +11,7 @@ export function Sobre() {
       <div>
         <h2>Sobre Mim</h2>
         <p>
-          Tenho {idade - 1}, sou de Araraquara/SP. <br />
+          Tenho {idade - 1} anos, sou de Araraquara/SP. <br />
           Formado em Analise e Desenvolvimento de Sistema pela Universidade
           Paulista - UNIP. <br /> Sou entusiasta das melhores tecnologias de
           desenvolvimento web.
