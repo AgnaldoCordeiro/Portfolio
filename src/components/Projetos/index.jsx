@@ -2,10 +2,9 @@ import styles from "./styles.module.scss";
 
 export function Projetos() {
   return (
-    <div>
+    <div id="projetos">
       <h2 className={styles.projects__title}>Projetos</h2>
-
-      <section className={styles.Projetos} id="projetos">
+      <section className={styles.Projetos}>
         <div className={styles.box}>
           <div className={styles.box__projects}>
             <iframe
