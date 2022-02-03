@@ -8,7 +8,7 @@
   margin: 0 auto;
   height: 90vh;
   position: relative;
-  background: var(--gray-100);
+  background: var(--color-fundo-gradiente);
   border-radius: 2rem;
 }
 .borderContent:before {
@@ -18,7 +18,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: rgb(12, 12, 12);
+  background: var(--color-border);
   z-index: -1;
   border-radius: 2rem;
 }
@@ -29,19 +29,14 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: rgb(12, 12, 12);
+  background: var(--color-border);
   z-index: -2;
   filter: blur(40px);
   border-radius: 2rem;
 }
 .borderContent:before,
 .borderContent:after {
-  background: linear-gradient(
-    235deg,
-    var(--yellow-500),
-    var(--gray-100),
-    #00bcd4
-  );
+  background: var(--gradient);
 }
 
 .titulo {
@@ -80,6 +75,7 @@
     height: 2rem;
     margin-top: 2rem;
     margin-right: 0.9rem;
+    filter: invert(100%);
   }
   img:hover {
     padding: 0.1rem;

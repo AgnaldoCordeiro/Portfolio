@@ -1,10 +1,11 @@
 .nav__bar {
-  background: var(--white);
+  background: var(--color-nav);
   height: 5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .header__Title {
@@ -20,7 +21,7 @@
     display: inline-block;
 
     a {
-      color: var(--gray-300);
+      color: var(--color-text);
     }
     transition: 6s;
     :hover {
@@ -30,6 +31,82 @@
   :last-child {
     padding-right: 2rem;
   }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gray-100);
+  background-image: url("/sol.svg");
+  background-repeat: no-repeat;
+  background-position: 2rem;
+
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 8px;
+  bottom: 4px;
+  //background-color: var(--color-nav);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-image: url("/planeta.png");
+
+  animation: slider 1s alternate infinite ease-in-out;
+  @keyframes slider {
+    from {
+      filter: drop-shadow(0 0 8px var(--yellow-500));
+    }
+    to {
+      filter: drop-shadow(0 0 10px var(--cyan-500));
+    }
+  }
+}
+
+input:checked + .slider {
+  background-color: var(--yellow-500);
+  background-image: url("/lua.png");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 1.2rem;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--gray-100);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
 }
 
 @media (max-width: 1280px) {
