@@ -73,8 +73,6 @@
   border: 3px solid #fff;
   box-shadow: 0 0 15px #0f0, inset 0 0 20px #0f0;
 
-  -webkit-box-reflect: below 10px
-    linear-gradient(transparent, transparent, #0002);
   animation: animate 5s linear infinite;
 }
 
@@ -159,6 +157,6 @@ input:checked + .slider:before {
 }
 @media (max-width: 390px) {
   .nav__bar {
-    width: 800px;
+    width: 820px;
   }
 }

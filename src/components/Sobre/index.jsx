@@ -12,7 +12,7 @@ export function Sobre() {
         <h2>Sobre Mim</h2>
         <p>
           Tenho {idade - 1} anos, sou de Araraquara/SP. <br />
-          Formado em Analise e Desenvolvimento de Sistema pela Universidade
+          Formado em Analise e Desenvolvimento de Sistemas pela Universidade
           Paulista - UNIP. <br /> Sou entusiasta das melhores tecnologias de
           desenvolvimento web.
         </p>
