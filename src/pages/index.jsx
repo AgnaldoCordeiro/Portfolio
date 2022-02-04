@@ -20,7 +20,7 @@ export default function Home() {
           </h1>
           <p>Desenvolvedor Front End</p>
           <button className={styles.btnDownload}>
-            <a href="/src/Doc/CV_Agnaldo.pdf" download>
+            <a href="/CV_Agnaldo.pdf" download>
               Download Currículo
             </a>
           </button>
