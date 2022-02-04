@@ -25,7 +25,11 @@ export default function Home() {
             </a>
           </button>
         </section>
-        <img src="/perfil-site.jpg" alt="imagem perfil" />
+        <img
+          src="/perfil-site.jpg"
+          alt="imagem perfil"
+          className={styles.imgStyle}
+        />
       </main>
 
       <Sobre />
