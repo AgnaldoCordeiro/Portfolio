@@ -39,7 +39,7 @@ export function Contato() {
                 </Link>
                 <Link href="https://www.linkedin.com/in/agnaldocordeiro/">
                   <a target="_blank" rel="noreferrer">
-                    <img src="/LinkedIn.svg" />
+                    <img src="/icons8-linkedin.svg" />
                   </a>
                 </Link>
               </box>

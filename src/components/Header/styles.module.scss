@@ -37,6 +37,7 @@
   display: inline-block;
   width: 70px;
   height: 34px;
+  margin-right: 1rem;
 }
 
 .switch input {
@@ -52,6 +53,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  right: 0;
   background-color: var(--gray-100);
   background-image: url("/sol.svg");
   background-repeat: no-repeat;
@@ -63,23 +65,40 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 8px;
-  bottom: 4px;
-  //background-color: var(--color-nav);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  background-image: url("/planeta.png");
+  height: 20px;
+  width: 20px;
 
-  animation: slider 1s alternate infinite ease-in-out;
-  @keyframes slider {
-    from {
-      filter: drop-shadow(0 0 8px var(--yellow-500));
-    }
-    to {
-      filter: drop-shadow(0 0 10px var(--cyan-500));
-    }
+  left: 4px;
+  bottom: 4px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px #0f0, inset 0 0 20px #0f0;
+
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0002);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 15px #0f0, inset 0 0 20px #0f0;
+    filter: hue-rotate(0deg);
+  }
+  20% {
+    box-shadow: 0 0 6px #0f0, inset 0 0 20px #0f0;
+  }
+  40% {
+    box-shadow: 0 0 4px #0f0, inset 0 0 20px #0f0;
+  }
+  60% {
+    box-shadow: 0 0 8px #0f0, inset 0 0 20px #0f0;
+  }
+  80% {
+    box-shadow: 0 0 10px #0f0, inset 0 0 20px #0f0;
+  }
+
+  100% {
+    box-shadow: 0 0 15px #0f0, inset 0 0 20px #0f0;
+    filter: hue-rotate(360deg);
   }
 }
 
@@ -89,6 +108,9 @@ input:checked + .slider {
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: 1.2rem;
+}
+input:checked + .slider:before {
+  left: 12px;
 }
 
 input:focus + .slider {

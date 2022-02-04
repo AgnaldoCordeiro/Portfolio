@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 export function Projetos() {
   return (
@@ -13,8 +14,11 @@ export function Projetos() {
               className={styles.giphyEmbed}
               allowFullScreen
             ></iframe>
-
-            <h3 className={styles.box__title}>PEB Engenharia</h3>
+            <Link href="https://pebengenharia.com.br/">
+              <a target="_blank" rel="noreferrer">
+                <h3 className={styles.box__title}>PEB Engenharia</h3>
+              </a>
+            </Link>
             <p className={styles.box__description}>
               Tecnologias: NextJS, SCSS, EmailJs.
             </p>
@@ -26,7 +30,11 @@ export function Projetos() {
               className={styles.giphyEmbed}
               allowFullScreen
             ></iframe>
-            <h3 className={styles.box__title}>Web Radio</h3>
+            <Link href="https://web-radio.vercel.app/">
+              <a target="_blank" rel="noreferrer">
+                <h3 className={styles.box__title}>Web Radio</h3>
+              </a>
+            </Link>
             <p className={styles.box__description}>
               Tecnologias: NextJS, Scss, TypeScript, Prismic, Stripe.
             </p>
@@ -38,8 +46,11 @@ export function Projetos() {
               className={styles.giphyEmbed}
               allowFullScreen
             ></iframe>
-
-            <h3 className={styles.box__title}>Mapa Covid-19</h3>
+            <Link href="https://map-covid19.vercel.app/">
+              <a target="_blank" rel="noreferrer">
+                <h3 className={styles.box__title}>Mapa Covid-19</h3>
+              </a>
+            </Link>
             <p className={styles.box__description}>
               Tecnologias: NextJS, Material-UI e TypeScript.
             </p>
