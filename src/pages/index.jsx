@@ -31,7 +31,6 @@ export default function Home() {
           className={styles.imgStyle}
         />
       </main>
-
       <Sobre />
       <Projetos />
       <Servicos />
